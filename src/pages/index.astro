@@ -29,9 +29,9 @@ import imageMancora from '../images/mancora-palm-beach.webp?url'
 <Layout title="David Chugden">
 	<main class="max-w-4xl mx-auto mt-[124px] px-8 lg:px-0 overflow-x-hidden md:overflow-x-visible">
      <section id="sobreMi" class="relative before:content-[''] before:absolute before:w-[338px] before:h-[326px] before:bg-gradient-radial before:from-[#94d7df] dark:before:from-primary-700/30 before:to-transparent before:rounded-full before:blur-2xl before:-z-[1] before:-bottom-[35px] before:left-[252px] before:animate-pulse before:animate-infinite before:animate-duration-[3000ms] after:content-[''] after:absolute after:w-[338px] after:h-[326px] after:bg-gradient-radial after:from-[#94d7df] dark:after:from-primary-700/30 after:to-transparent after:rounded-full after:blur-2xl after:-z-[1] after:top-0 after:right-[300px] after:animate-pulse after:animate-infinite after:animate-duration-[3000ms]">
-      <Image  src={myImage} alt="David Chugden" class="rounded-full mb-[30px] transition-all ease-in-out duration-300" :class="{'w-14 h-14': scrollTop, 'w-16 h-16': !scrollTop}"/>
+      <Image  src={myImage} alt="David Chugden" class="rounded-full mb-[30px] transition-all ease-in-out duration-300 brightness-[2] dark:brightness-[1.5]" :class="{'w-14 h-14': scrollTop, 'w-16 h-16': !scrollTop}"/>
       <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-5">Desarrollador web, apasionado por la tecnología, autodidacta...</h1>
-      <div class="md:text-lg mb-5 space-y-4 text-[#888888]">
+      <div class="md:text-lg mb-5 space-y-4 text-[#666666] dark:text-[#888888]">
         <p>Hola, soy David Chugden, me especializo en el desarrollo front-end, pero también tengo experiencia en el desarrollo back-end. Me gusta aprender nuevas tecnologías y herramientas que me ayuden a mejorar mis habilidades y a ofrecer un mejor servicio a mis clientes.</p>
         <p>Si quieres saber más sobre mi trabajo, puedes revisar mis <a href="#proyectos" class="font-semibold dark:text-white/90 text-black !opacity-100 underline decoration-wavy hover:no-underline">Proyectos</a>.</p>
         <p>Puedes contactarme mediante los siguientes enlaces. Estaré encantado de colaborar contigo en tu próximo proyecto.</p>
@@ -141,7 +141,7 @@ import imageMancora from '../images/mancora-palm-beach.webp?url'
             <Job title="Desarrollador Web Full Stack" description="Durante este período, me dediqué al desarrollo de sitios web estáticos, dinámicos administrables, y sistemas web. También implementé módulos de diferentes tipos a distintos sitios web." city="Chiclayo, Perú • Terratech" date="Agosto 2018 - Febrero 2022" />
           </li>
         </ol>
-        <button type="button" class="bg-black dark:bg-white dark:text-black border-gray-200 transition duration-500 font-medium max-w-fit w-full text-center rounded-full px-8 text-[17px] py-3 translate-x-12 -translate-y-12 flex items-center justify-center gap-3 hover:bg-gray-300 group"><span class="group-hover:hidden">Descargar curriculum</span><span class="hidden group-hover:block">Próximamente</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg></but>
+        <button type="button" class="bg-black text-white dark:bg-white dark:text-black border-gray-200 transition duration-500 font-medium max-w-fit w-full text-center rounded-full px-8 text-[17px] py-3 translate-x-12 -translate-y-12 flex items-center justify-center gap-3 hover:bg-black/80 dark:hover:bg-gray-300 group"><span class="group-hover:hidden">Descargar curriculum</span><span class="hidden group-hover:block">Próximamente</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg></but>
       </div>
      </Section>
      <Section id="proyectos" title="Proyectos realizados" class="relative before:content-[''] before:absolute before:w-[646px] before:h-[623px] before:bg-gradient-radial before:from-[#94d7df] dark:before:from-primary-700/30 before:to-transparent before:rounded-full before:blur-2xl before:-z-[1] flex justify-center items-center">
@@ -152,8 +152,8 @@ import imageMancora from '../images/mancora-palm-beach.webp?url'
       </div>
       <div slot="content">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5">
-          <Card title="Dumaco" description="Empresa que se dedica a brindar soluciones tecnológicas para el desarrollo empresarial." href="https://www.delvallepropiedades.com/" image={imageDumaco}/>
-          <Card title="Del Valle Propiedades" description="Empresa que se dedica a brindar soluciones inmobiliarias para el desarrollo empresarial. " href="https://dumaco.net/" image={imageDelValle}/>
+          <Card title="Dumaco" description="Empresa que se dedica a brindar soluciones tecnológicas para el desarrollo empresarial." href="https://dumaco.net/" image={imageDumaco}/>
+          <Card title="Del Valle Propiedades" description="Empresa que se dedica a brindar soluciones inmobiliarias para el desarrollo empresarial. " href="https://www.delvallepropiedades.com/" image={imageDelValle}/>
           <Card title="Clinica Palomino" description="Empresa que ofrece servicios médicos ocupacionales y asistenciales de calidad. " href="https://clinicapalomino.com/" image={imageClinicaPalomino}/>
           <Card title="RCH Perú" description="Empresa que provee repuestos para maquinaria pesada de marcas como Komatsu, Caterpillar, Bomag y John Deere." href="https://www.rchperu.com/" image={imageRch}/>
           <Card title="Máncora Palm Beach" description="Proyecto de habilitación urbana con un concepto campestre, ubicado en la playa de Máncora, en el norte de Perú." href="https://mancorapalmbeach.com/" image={imageMancora}/>
