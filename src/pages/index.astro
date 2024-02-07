@@ -1,0 +1,177 @@
+---
+import { Image } from 'astro:assets';
+import myImage from "../../public/david-chugden.webp";
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import Badge from '../components/Badge.astro';
+import Job from '../components/Job.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro'
+// Imagenes
+import imageDumaco from '../images/dumaco.webp?url'
+import imageClinicaPalomino from '../images/clinica-palomino.webp?url'
+import imageCpiGas from '../images/cpi-gas.webp?url'
+import imageAndeanConsultores from '../images/andean-consultores.webp?url'
+import imageRch from '../images/rch-peru.webp?url'
+import imageBigBag from '../images/bigbag-peru.webp?url'
+import imageDelValle from '../images/delvallepropiedades.webp?url'
+import imageMapa19 from '../images/mapa19.webp?url'
+import imageMesta from '../images/corporacion-mesta.webp?url'
+import imageMegga from '../images/meggamusic.webp?url'
+import imageSiePeru from '../images/sie-peru.webp?url'
+import imagekonnect from '../images/konnecton.webp?url'
+import imageCarbajal from '../images/carbajal-group.webp?url'
+import imageMyr from '../images/myrproveedores.webp?url'
+import imageHappy from '../images/happytoy.webp?url'
+import imageMancora from '../images/mancora-palm-beach.webp?url'
+---
+
+<Layout title="David Chugden">
+	<main class="max-w-4xl mx-auto mt-[124px] px-8 lg:px-0 overflow-x-hidden md:overflow-x-visible">
+     <section id="sobreMi" class="relative before:content-[''] before:absolute before:w-[338px] before:h-[326px] before:bg-gradient-radial before:from-[#94d7df] dark:before:from-primary-700/30 before:to-transparent before:rounded-full before:blur-2xl before:-z-[1] before:-bottom-[35px] before:left-[252px] before:animate-pulse before:animate-infinite before:animate-duration-[3000ms] after:content-[''] after:absolute after:w-[338px] after:h-[326px] after:bg-gradient-radial after:from-[#94d7df] dark:after:from-primary-700/30 after:to-transparent after:rounded-full after:blur-2xl after:-z-[1] after:top-0 after:right-[300px] after:animate-pulse after:animate-infinite after:animate-duration-[3000ms]">
+      <Image  src={myImage} alt="David Chugden" class="rounded-full mb-[30px] transition-all ease-in-out duration-300" :class="{'w-14 h-14': scrollTop, 'w-16 h-16': !scrollTop}"/>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-5">Desarrollador web, apasionado por la tecnología, autodidacta...</h1>
+      <div class="md:text-lg mb-5 space-y-4 text-[#888888]">
+        <p>Hola, soy David Chugden, me especializo en el desarrollo front-end, pero también tengo experiencia en el desarrollo back-end. Me gusta aprender nuevas tecnologías y herramientas que me ayuden a mejorar mis habilidades y a ofrecer un mejor servicio a mis clientes.</p>
+        <p>Si quieres saber más sobre mi trabajo, puedes revisar mis <a href="#proyectos" class="font-semibold dark:text-white/90 text-black !opacity-100 underline decoration-wavy hover:no-underline">Proyectos</a>.</p>
+        <p>Puedes contactarme mediante los siguientes enlaces. Estaré encantado de colaborar contigo en tu próximo proyecto.</p>
+      </div>
+      <div class="inline-flex gap-3 items-center">
+        <a href="mailto:hola@davidchugden.com" aria-label="Correo de David Chugden" title="Correo de David Chugden" class="transform hover:-translate-y-0.5 transition-all duration-300">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+        </a>
+        <a href="https://www.linkedin.com/in/david-chugden-972368190/" aria-label="LinkedIn de David Chugden" target="_blank" title="LinkedIn de David Chugden" class="transform hover:-translate-y-0.5 transition-all duration-300">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 4C6 5.1 5.1 6 4 6C2.9 6 2 5.1 2 4C2 2.9 2.9 2 4 2C5.1 2 6 4 6 4ZM6 9V21H2V9H6ZM16 8C19.31 8 22 10.69 22 14V21H18V14C18 12.9 17.1 12 16 12C14.9 12 14 12.9 14 14V21H10V14C10 10.69 12.69 8 16 8Z" stroke="currentColor" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+        </a>
+        <a href="https://github.com/dachugden" target="_blank" aria-label="Github de David Chugden" title="Github de David Chugden" class="transform hover:-translate-y-0.5 transition-all duration-300">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22" stroke="currentColor" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+     </section>
+     <Section title="Tecnologías">
+      <div slot="icon">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="m11.265 5.805-6.4875 10.195 6.4875 10.195c0.1123 0.1661 0.1902 0.353 0.229 0.5497 0.0389 0.1967 0.0379 0.3992-0.0029 0.5955-0.0407 0.1964-0.1205 0.3825-0.2344 0.5475s-0.2598 0.3054-0.4289 0.4131c-0.1692 0.1076-0.3582 0.1803-0.5559 0.2136-0.1978 0.0334-0.40014 0.0267-0.59525-0.0195-0.1951-0.0462-0.37896-0.1311-0.5407-0.2496s-0.29808-0.2682-0.40097-0.4403l-7-11c-0.15303-0.2406-0.23431-0.5199-0.23431-0.805 0-0.2852 0.08128-0.5644 0.23431-0.805l7-11c0.2188-0.32354 0.55517-0.54898 0.9376-0.62838 0.38242-0.07941 0.78072-0.00651 1.1102 0.20318 0.3296 0.20969 0.5643 0.53965 0.6543 0.91971 0.0901 0.38006 0.0283 0.78025-0.1721 1.1155zm19 9.39-7-11c-0.1029-0.17209-0.2393-0.32181-0.401-0.44031s-0.3456-0.20336-0.5407-0.24958-0.3975-0.05286-0.5952-0.01952-0.3867 0.10598-0.5559 0.21362c-0.1692 0.10765-0.315 0.24812-0.429 0.4131-0.1139 0.16498-0.1936 0.35114-0.2344 0.54745-0.0407 0.19632-0.0417 0.39882-0.0029 0.59552 0.0389 0.19671 0.1168 0.38363 0.2291 0.54972l6.4875 10.195-6.4875 10.195c-0.1123 0.1661-0.1902 0.353-0.2291 0.5497-0.0388 0.1967-0.0378 0.3992 0.0029 0.5955 0.0408 0.1964 0.1205 0.3825 0.2344 0.5475 0.114 0.165 0.2598 0.3054 0.429 0.4131 0.1692 0.1076 0.3582 0.1803 0.5559 0.2136 0.1977 0.0334 0.4001 0.0267 0.5952-0.0195s0.379-0.1311 0.5407-0.2496 0.2981-0.2682 0.401-0.4403l7-11c0.153-0.2406 0.2343-0.5199 0.2343-0.805 0-0.2852-0.0813-0.5644-0.2343-0.805z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div slot="content">
+        <div class="flex flex-wrap gap-3 md:gap-4">
+          <Badge title="HTML">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="m12 18.178l4.62-1.256l.623-6.778H9.026L8.822 7.89h8.626l.227-2.211H6.325l.636 6.678h7.82l-.261 2.866l-2.52.667l-2.52-.667l-.158-1.844h-2.27l.329 3.544zM3 2h18l-1.623 18L12 22l-7.377-2z"/></svg>
+            </div>
+          </Badge>
+          <Badge title="CSS">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m3 2l1.6 17.8L12 22l7.5-2.2L21 2zm13.3 14.7L12 18l-4.3-1.2l-.3-3.1h2.1l.2 1.5l2.3.6l2.3-.6l.3-3H7.3l-.2-2h7.7l.1-2H7l-.2-2h10.6l-1 10.6Z"/></svg>
+            </div>
+          </Badge>
+          <Badge title="TailwindCSS">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8c1.2-1.6 2.6-2.2 4.2-1.8c.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8c-1.2 1.6-2.6 2.2-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8m-6 7.2c-3.2 0-5.2 1.6-6 4.8c1.2-1.6 2.6-2.2 4.2-1.8c.913.228 1.565.89 2.288 1.624c1.177 1.194 2.538 2.576 5.512 2.576c3.2 0 5.2-1.6 6-4.8c-1.2 1.6-2.6 2.2-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12"/></svg>
+            </div>
+          </Badge>
+          <Badge title="Bootstrap">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M5.423 3.038c-1.284 0-2.233 1.124-2.19 2.342c.04 1.171-.013 2.688-.395 3.924c-.383 1.24-1.03 2.026-2.088 2.127v1.138c1.058.101 1.705.887 2.088 2.127c.382 1.237.435 2.753.394 3.924c-.042 1.218.907 2.342 2.192 2.342h13.154c1.284 0 2.234-1.124 2.192-2.342c-.041-1.171.012-2.687.393-3.924c.384-1.24 1.03-2.026 2.087-2.127v-1.138c-1.058-.101-1.703-.887-2.087-2.127c-.381-1.236-.434-2.753-.393-3.924c.042-1.218-.908-2.342-2.192-2.342zm10.581 11.033c0 1.678-1.251 2.696-3.328 2.696H9.14a.381.381 0 0 1-.382-.381V7.614a.381.381 0 0 1 .382-.38h3.515c1.732 0 2.869.937 2.869 2.378c0 1.01-.765 1.916-1.739 2.074v.053c1.326.145 2.22 1.064 2.22 2.332M12.29 8.442h-2.016v2.848h1.698c1.313 0 2.036-.529 2.036-1.474c0-.885-.622-1.374-1.718-1.374m-2.016 3.977v3.139h2.09c1.367 0 2.09-.549 2.09-1.58c0-1.03-.743-1.559-2.178-1.559z"/></svg>
+              </svg>
+            </div>
+          </Badge>
+          <Badge title="JavaScript">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm7.334 13.055c.72.58 1.438.865 2.156.858c.44 0 .778-.08 1.012-.242a.75.75 0 0 0 .341-.66a.971.971 0 0 0-.34-.748c-.235-.205-.679-.41-1.332-.616c-.784-.227-1.39-.52-1.815-.88c-.418-.36-.63-.862-.638-1.507c0-.609.264-1.118.792-1.529c.514-.41 1.17-.616 1.97-.616c1.114 0 2.009.271 2.683.814l-.77 1.199a2.597 2.597 0 0 0-.935-.462a3.211 3.211 0 0 0-.946-.165c-.38 0-.685.07-.913.209c-.227.14-.34.323-.34.55c0 .25.139.462.417.638c.28.169.756.356 1.43.561c.814.242 1.394.565 1.738.968c.345.403.517.917.517 1.54c0 .638-.245 1.188-.737 1.65c-.484.455-1.188.693-2.112.715c-1.21 0-2.222-.363-3.036-1.089zm-5.53.638c.235.147.517.22.847.22c.345 0 .63-.099.858-.297c.227-.205.341-.561.341-1.067v-5.302h1.485v5.588c-.022.865-.271 1.489-.748 1.87a2.466 2.466 0 0 1-.891.484a3.296 3.296 0 0 1-.935.143c-.55 0-1.038-.095-1.463-.286c-.455-.205-.836-.568-1.144-1.089l1.034-.847c.19.257.396.451.616.583"/></svg>
+            </div>
+          </Badge>
+          <Badge title="AlpineJs">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="m24 12l-5.72 5.746l-5.724-5.741l5.724-5.75zM5.72 6.254L0 12l5.72 5.746h11.44z"/></svg>
+            </div>
+          </Badge>
+          <Badge title="PHP">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5.5C5.271 5.5 0 8.355 0 12s5.271 6.5 12 6.5s12-2.855 12-6.5s-5.271-6.5-12-6.5m-1.246 2h1.31l-.416 2h1.17c.742 0 1.24.104 1.524.363c.277.256.361.676.25 1.248l-.52 2.389H12.74l.479-2.209c.058-.303.035-.514-.067-.625c-.101-.111-.324-.166-.658-.166h-1.049l-.633 3H9.5zM5 9.5h2.666c1.271 0 2.041.852 1.74 2.123C9.056 13.1 8.12 13.5 6.396 13.5h-.824L5.311 15H3.986zm10.5 0h2.666c1.271 0 2.041.852 1.74 2.123c-.35 1.477-1.287 1.877-3.01 1.877h-.824l-.261 1.5h-1.325zm-9.365 1l-.377 2h.855c.74 0 1.428-.084 1.543-1.187c.043-.428-.135-.813-.99-.813zm10.5 0l-.377 2h.855c.74 0 1.428-.084 1.543-1.187c.043-.428-.134-.813-.99-.813z"/></svg>
+            </div>
+          </Badge>
+          <Badge title="Laravel">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M23.642 5.43a.364.364 0 0 1 .014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 0 1-.188.326L9.93 23.949a.316.316 0 0 1-.066.027c-.008.002-.016.008-.024.01a.348.348 0 0 1-.192 0c-.011-.002-.02-.008-.03-.012c-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 0 1-.189-.326V2.974c0-.033.005-.066.014-.098c.003-.012.01-.02.014-.032a.369.369 0 0 1 .023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027c.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 0 1 .375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045c.008.011.02.021.025.033c.01.02.017.038.024.058c.003.011.01.021.013.032c.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098c.003-.01.01-.02.013-.032a.487.487 0 0 1 .024-.059c.007-.012.018-.02.025-.033c.012-.015.021-.03.033-.043c.012-.012.025-.02.037-.028c.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 0 1 .375 0l4.513 2.598c.016.01.027.021.042.031c.012.01.025.018.036.028c.013.014.022.03.034.044c.008.012.019.021.024.033a.3.3 0 0 1 .024.06c.006.01.012.021.015.032m-.74 5.032V6.179l-1.578.908l-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225l-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445l-.002-.003H5.04c-.014-.01-.025-.021-.04-.031c-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04c-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047c-.006-.016-.014-.027-.018-.043a.49.49 0 0 1-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81L1.47 2.974l3.76 2.164l3.758-2.164zm1.956 13.505l2.182-1.256V3.624l-1.58.91l-2.182 1.255v9.435zm11.581-10.95l-3.76 2.163l3.76 2.163l3.759-2.164zm-.376 4.978L16.21 7.087l-1.58-.907v4.283l2.182 1.256l1.58.908zm-8.65 9.654l5.514-3.148l2.756-1.572l-3.757-2.163l-4.323 2.489l-3.941 2.27z"/></svg>
+            </div>
+          </Badge>
+          <Badge title="Livewire">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><path id="IconifyId18d7f68de45c8c77a0" d="M20.982 18.777C20.61 19.325 20.33 20 19.576 20c-1.269 0-1.337-1.913-2.607-1.913c-1.27 0-1.2 1.913-2.47 1.913c-1.268 0-1.337-1.913-2.607-1.913c-1.269 0-1.2 1.913-2.47 1.913c-1.268 0-1.337-1.913-2.607-1.913c-1.27 0-1.2 1.913-2.47 1.913c-.398 0-.679-.189-.915-.448A10.414 10.414 0 0 1 2 14.262C2 8.593 6.477 4 12 4c5.524 0 10 4.594 10 10.261c0 1.62-.366 3.152-1.018 4.516"/></defs><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><use href="#IconifyId18d7f68de45c8c77a0"/><use href="#IconifyId18d7f68de45c8c77a0"/><path d="M11.5 16c3.167 0 4.5-1.748 4.5-4.231C16 9.285 13.986 7 11.5 7C9.015 7 7 9.286 7 11.769S8.333 16 11.5 16"/><path d="M10 11a1 1 0 1 0 0-2a1 1 0 0 0 0 2"/></g></svg>
+            </div>
+          </Badge>
+          <Badge title="MySql">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="m24.129 23.412l-.508-.484a6.66 6.66 0 0 0-.809-.891l-.005-.004q-.448-.407-.931-.774q-.387-.266-1.064-.641a1.6 1.6 0 0 1-.818-.824l-.004-.01l-.048-.024c.212-.021.406-.06.592-.115l-.023.006l.57-.157c.236-.074.509-.122.792-.133h.006c.298-.012.579-.06.847-.139l-.025.006q.194-.048.399-.109t.351-.109v-.169q-.145-.217-.351-.496a2.561 2.561 0 0 0-.443-.468l-.005-.004q-.629-.556-1.303-1.076a15.783 15.783 0 0 0-1.311-.916l-.068-.04a4.983 4.983 0 0 0-.825-.435l-.034-.012q-.448-.182-.883-.399a1.638 1.638 0 0 0-.327-.119l-.011-.002a.516.516 0 0 1-.29-.169l-.001-.001a2.999 2.999 0 0 1-.355-.609l-.008-.02q-.145-.339-.314-.651q-.363-.702-.702-1.427t-.651-1.452q-.217-.484-.399-.967a5.395 5.395 0 0 0-.461-.942l.013.023a17.366 17.366 0 0 0-1.331-1.961l.028.038a14.57 14.57 0 0 0-1.459-1.59l-.008-.007a17.619 17.619 0 0 0-1.632-1.356l-.049-.035q-.896-.651-1.96-1.282a3.7 3.7 0 0 0-.965-.393l-.026-.006l-1.113-.278l-.629-.048q-.314-.024-.629-.024a1.68 1.68 0 0 1-.387-.279a3.581 3.581 0 0 0-.353-.295l-.01-.007a11.686 11.686 0 0 0-2.043-.93L2.071.18A1.355 1.355 0 0 0 .9.096L.909.093a1.36 1.36 0 0 0-.795.84l-.003.01a1.515 1.515 0 0 0 .232 1.549l-.002-.003q.544.725.834 1.14q.217.291.448.605c.141.188.266.403.367.63l.008.021c.056.119.105.261.141.407l.003.016q.048.206.121.448q.217.556.411 1.14c.141.425.297.785.478 1.128l-.019-.04q.145.266.291.52T3.738 9a.868.868 0 0 0 .241.242l.003.002a.406.406 0 0 1 .169.313v.001a1.326 1.326 0 0 0-.217.586l-.001.006a4.227 4.227 0 0 1-.153.695l.008-.03a7.103 7.103 0 0 0-.351 2.231c0 .258.013.512.04.763l-.003-.031c.06.958.349 1.838.812 2.6l-.014-.025c.197.295.408.552.641.787a.914.914 0 0 0 1.106.203l-.005.002a.926.926 0 0 0 .617-.827v-.002c.048-.474.12-.898.219-1.312l-.013.067a.595.595 0 0 0 .038-.211l-.002-.045v.002q-.012-.109.133-.206v.048q.145.339.302.677t.326.677c.295.449.608.841.952 1.202l-.003-.003a7.74 7.74 0 0 0 1.127 1.001l.022.015c.212.162.398.337.566.528l.004.004c.158.186.347.339.56.454l.01.005v-.024h.048a.461.461 0 0 0-.18-.205l-.002-.001a1.829 1.829 0 0 1-.211-.136l.005.003q-.217-.217-.448-.484t-.423-.508q-.508-.702-.969-1.467t-.871-1.555q-.194-.387-.375-.798t-.351-.798a.997.997 0 0 1-.096-.334v-.005a.318.318 0 0 0-.168-.265l-.002-.001a2.947 2.947 0 0 1-.408.545l.001-.001a1.974 1.974 0 0 0-.382.58l-.005.013a4.272 4.272 0 0 0-.289 1.154l-.002.019q-.072.641-.145 1.318l-.048.024l-.024.024a.855.855 0 0 1-.59-.443l-.002-.005q-.182-.351-.326-.69a6.448 6.448 0 0 1-.423-2.144v-.009a6.218 6.218 0 0 1 .286-2.318l-.012.044q.072-.266.314-.896t.097-.871a.876.876 0 0 0-.265-.41l-.001-.001a3.31 3.31 0 0 1-.335-.335l-.003-.004q-.169-.244-.326-.52t-.278-.544a11.408 11.408 0 0 1-.474-1.353l-.022-.089a10.174 10.174 0 0 0-.546-1.503l.026.064a3.32 3.32 0 0 0-.39-.669l.006.008q-.244-.326-.436-.617q-.244-.314-.484-.605a3.414 3.414 0 0 1-.426-.657l-.009-.02a1.638 1.638 0 0 1-.119-.327l-.002-.011a.406.406 0 0 1 .049-.34l-.001.002a.303.303 0 0 1 .073-.145a.308.308 0 0 1 .143-.072h.002a.55.55 0 0 1 .536-.035l-.003-.001c.219.062.396.124.569.195l-.036-.013q.459.194.847.375c.298.142.552.292.792.459l-.018-.012q.194.121.387.266t.411.291h.339q.387 0 .822.037c.293.023.564.078.822.164l-.024-.007c.481.143.894.312 1.286.515l-.041-.019q.593.302 1.125.641c.589.367 1.098.743 1.577 1.154l-.017-.014c.5.428.954.867 1.38 1.331l.01.012c.416.454.813.947 1.176 1.464l.031.047c.334.472.671 1.018.974 1.584l.042.085a4.6 4.6 0 0 1 .234.536l.011.033q.097.278.217.57q.266.605.57 1.221t.57 1.198l.532 1.161c.187.406.396.756.639 1.079l-.011-.015c.203.217.474.369.778.422l.008.001c.368.092.678.196.978.319l-.047-.017c.143.065.327.134.516.195l.04.011c.212.065.396.151.565.259l-.009-.005c.327.183.604.363.868.559l-.021-.015q.411.302.822.57q.194.145.651.423t.484.52a11.202 11.202 0 0 0-1.834.087l.056-.006a5.959 5.959 0 0 0-1.479.39l.04-.014a2.556 2.556 0 0 1-.388.129l-.019.004a.312.312 0 0 0-.266.277v.001c.061.076.11.164.143.26l.002.006c.034.102.075.19.125.272l-.003-.006c.119.211.247.393.391.561l-.004-.005c.141.174.3.325.476.454l.007.005q.244.194.508.399c.161.126.343.25.532.362l.024.013c.284.174.614.34.958.479l.046.016c.374.15.695.324.993.531l-.016-.011q.291.169.58.375t.556.399c.073.072.137.152.191.239l.003.005a.573.573 0 0 0 .36.193h.003v-.048a.516.516 0 0 1-.184-.267l-.001-.004a.95.95 0 0 0-.112-.273l.002.004zM5.553 4.207q-.194 0-.363.012a1.285 1.285 0 0 0-.323.063l.009-.003v.024h.048q.097.145.244.326t.266.351l.387.798l.048-.024a.735.735 0 0 0 .252-.321l.002-.005c.052-.139.082-.301.082-.469l-.001-.054v.003a.504.504 0 0 1-.108-.154l-.001-.003l-.081-.182a.52.52 0 0 0-.214-.192l-.003-.001a.93.93 0 0 1-.244-.169"/></svg>
+            </div>
+          </Badge>
+          <Badge title="Git">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2a2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82"/></svg>
+            </div>
+          </Badge>
+          <Badge title="Figma">
+            <div slot="icon">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="currentColor" d="M184 96a40 40 0 0 0-24-72H88a40 40 0 0 0-24 72a40 40 0 0 0 1.37 65A44 44 0 1 0 136 196v-36a40 40 0 1 0 48-64m0-32a24 24 0 0 1-24 24h-24V40h24a24 24 0 0 1 24 24M64 64a24 24 0 0 1 24-24h32v48H88a24 24 0 0 1-24-24m24 88a24 24 0 0 1 0-48h32v48zm32 44a28 28 0 1 1-28-28h28Zm40-44a24 24 0 1 1 24-24a24 24 0 0 1-24 24"/></svg>
+            </div>
+          </Badge>
+        </div>
+      </div>
+     </Section>
+     <Section id="experiencia" title="Experiencia laboral" class="relative before:content-[''] before:absolute before:w-[338px] before:h-[326px] before:bg-gradient-radial before:from-[#94d7df] dark:before:from-primary-700/30 before:to-transparent before:rounded-full before:blur-2xl before:-z-[1] before:top-[90px] before:-left-[110px] before:animate-pulse before:animate-infinite before:animate-duration-[3000ms] before:animate-delay-300">
+      <div slot="icon">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="m12.5 12.5c0-0.3978 0.158-0.7794 0.4393-1.0607s0.6629-0.4393 1.0607-0.4393h4c0.3978 0 0.7794 0.158 1.0607 0.4393s0.4393 0.6629 0.4393 1.0607-0.158 0.7794-0.4393 1.0607-0.6629 0.4393-1.0607 0.4393h-4c-0.3978 0-0.7794-0.158-1.0607-0.4393s-0.4393-0.6629-0.4393-1.0607zm17-4v16c0 0.663-0.2634 1.2989-0.7322 1.7678-0.4689 0.4688-1.1048 0.7322-1.7678 0.7322h-22c-0.66304 0-1.2989-0.2634-1.7678-0.7322-0.46884-0.4689-0.73223-1.1048-0.73223-1.7678v-16c0-0.66304 0.26339-1.2989 0.73223-1.7678s1.1047-0.73223 1.7678-0.73223h4.5v-1c0-0.92826 0.36875-1.8185 1.0251-2.4749 0.6564-0.65638 1.5466-1.0251 2.4749-1.0251h6c0.9283 0 1.8185 0.36875 2.4749 1.0251 0.6564 0.65637 1.0251 1.5466 1.0251 2.4749v1h4.5c0.663 0 1.2989 0.26339 1.7678 0.73223 0.4688 0.46884 0.7322 1.1047 0.7322 1.7678zm-17-2.5h7v-1c0-0.13261-0.0527-0.25979-0.1464-0.35355-0.0938-0.09377-0.221-0.14645-0.3536-0.14645h-6c-0.1326 0-0.2598 0.05268-0.3536 0.14645-0.0937 0.09376-0.1464 0.22094-0.1464 0.35355v1zm-7 3v4.4038c3.2369 1.706 6.841 2.5971 10.5 2.5962 3.6591 8e-4 7.2633-0.8907 10.5-2.5975v-4.4025h-21zm21 15v-7.2575c-3.3004 1.4884-6.8795 2.2579-10.5 2.2575-3.6205 6e-4 -7.1997-0.7689-10.5-2.2575v7.2575h21z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div slot="content">
+        <ol class="mt-16">
+          <li>
+            <Job title="Desarrollador Web Front-End, Freelance" description="Encargado en el diseño y desarrollo de interfaces de usuario interactivas y dinámicas, siguiendo los principios de usabilidad, accesibilidad y responsividad. Diseñé y desarrollé las diferentes dashboards y páginas web." city="Lima, Perú • Dumaco Sac" date="Febrero 2022 - Actualidad" />
+          </li>
+          <li>
+            <Job title="Desarrollador Web Full Stack" description="Durante este período, me dediqué al desarrollo de sitios web estáticos, dinámicos administrables, y sistemas web. También implementé módulos de diferentes tipos a distintos sitios web." city="Chiclayo, Perú • Terratech" date="Agosto 2018 - Febrero 2022" />
+          </li>
+        </ol>
+        <button type="button" class="bg-black dark:bg-white dark:text-black border-gray-200 transition duration-500 font-medium max-w-fit w-full text-center rounded-full px-8 text-[17px] py-3 translate-x-12 -translate-y-12 flex items-center justify-center gap-3 hover:bg-gray-300 group"><span class="group-hover:hidden">Descargar curriculum</span><span class="hidden group-hover:block">Próximamente</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg></but>
+      </div>
+     </Section>
+     <Section id="proyectos" title="Proyectos realizados" class="relative before:content-[''] before:absolute before:w-[646px] before:h-[623px] before:bg-gradient-radial before:from-[#94d7df] dark:before:from-primary-700/30 before:to-transparent before:rounded-full before:blur-2xl before:-z-[1] flex justify-center items-center">
+      <div slot="icon">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="m29 19.5h-0.5v-10.5c0-0.92826-0.3687-1.8185-1.0251-2.4749-0.6564-0.65638-1.5466-1.0251-2.4749-1.0251h-18c-0.92826 0-1.8185 0.36875-2.4749 1.0251-0.65638 0.65637-1.0251 1.5466-1.0251 2.4749v10.5h-0.5c-0.39782 0-0.77936 0.158-1.0607 0.4393s-0.43934 0.6629-0.43934 1.0607v3c0 0.9283 0.36875 1.8185 1.0251 2.4749 0.65637 0.6564 1.5466 1.0251 2.4749 1.0251h22c0.9283 0 1.8185-0.3687 2.4749-1.0251s1.0251-1.5466 1.0251-2.4749v-3c0-0.3978-0.158-0.7794-0.4393-1.0607s-0.6629-0.4393-1.0607-0.4393zm-22.5-10.5c0-0.13261 0.05268-0.25979 0.14645-0.35355 0.09376-0.09377 0.22094-0.14645 0.35355-0.14645h18c0.1326 0 0.2598 0.05268 0.3536 0.14645 0.0937 0.09376 0.1464 0.22094 0.1464 0.35355v10.5h-19v-10.5zm21 15c0 0.1326-0.0527 0.2598-0.1464 0.3536-0.0938 0.0937-0.221 0.1464-0.3536 0.1464h-22c-0.13261 0-0.25979-0.0527-0.35355-0.1464-0.09377-0.0938-0.14645-0.221-0.14645-0.3536v-1.5h23v1.5zm-8-12c0 0.3978-0.158 0.7794-0.4393 1.0607s-0.6629 0.4393-1.0607 0.4393h-4c-0.3978 0-0.7794-0.158-1.0607-0.4393s-0.4393-0.6629-0.4393-1.0607 0.158-0.7794 0.4393-1.0607 0.6629-0.4393 1.0607-0.4393h4c0.3978 0 0.7794 0.158 1.0607 0.4393s0.4393 0.6629 0.4393 1.0607z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div slot="content">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5">
+          <Card title="Dumaco" description="Empresa que se dedica a brindar soluciones tecnológicas para el desarrollo empresarial." href="https://www.delvallepropiedades.com/" image={imageDumaco}/>
+          <Card title="Del Valle Propiedades" description="Empresa que se dedica a brindar soluciones inmobiliarias para el desarrollo empresarial. " href="https://dumaco.net/" image={imageDelValle}/>
+          <Card title="Clinica Palomino" description="Empresa que ofrece servicios médicos ocupacionales y asistenciales de calidad. " href="https://clinicapalomino.com/" image={imageClinicaPalomino}/>
+          <Card title="RCH Perú" description="Empresa que provee repuestos para maquinaria pesada de marcas como Komatsu, Caterpillar, Bomag y John Deere." href="https://www.rchperu.com/" image={imageRch}/>
+          <Card title="Máncora Palm Beach" description="Proyecto de habilitación urbana con un concepto campestre, ubicado en la playa de Máncora, en el norte de Perú." href="https://mancorapalmbeach.com/" image={imageMancora}/>
+          <Card title="Sie Perú " description="Empresa que se dedica a brindar soluciones tecnológicas en el área de electricidad, mecánica y automatización." href="https://www.sieperueirl.com/" image={imageSiePeru}/>
+          <Card title="Konnect On" description="Herramienta integral, dinámica y flexible que ofrece Dumaco para facilitar el trabajo de los brokers de seguros." href="https://dumaco.net/konnecton/" image={imagekonnect}/>
+          <Card title="CPI Gas Technology" description="Empresa que ofrece mantenimiento, confiabilidad y gestión de activos para equipos de compresión y descompresión de gas natural." href="https://cpigastechnology.com/" image={imageCpiGas}/>
+          <Card title="Andean Consultores" description="Empresa que ofrece servicios de contabilidad y asesoría de empresas a nivel nacional." href="https://www.andeanconsultores.com/" image={imageAndeanConsultores}/>
+          <Card title="BigBag Perú" description="Empresa que fabrica y vende sacos de polipropileno para el transporte y almacenamiento de productos a granel." href="https://www.bigbagperu.com/" image={imageBigBag}/>
+          <Card title="Carbajal Group" description="Empresa que ofrece soluciones en diferentes áreas, como limpieza, ferretería, eléctrica y protección personal." href="https://www.carbajalgroup.org/" image={imageCarbajal}/>
+          <Card title="MyR Proveedores" description="Empresa que vende equipos de protección personal (EPP) para diferentes sectores industriales." href="https://myrproveedores.com/" image={imageMyr}/>
+          <Card title="HappyToy" description="Empresa que se dedica a la importación y comercialización de juegos, juguetes y artículos de camping infantiles en toda su variedad." href="https://happytoy.com.pe/" image={imageHappy}/>
+          <Card title="Corporación Mesta" description="Empresa que ofrece servicios legales a personas o empresas, mediante un equipo de abogados especializados en diferentes áreas del derecho." href="https://www.corporacionmesta.com/mestaabogados/" image={imageMesta}/>
+          <Card title="Mapa 19" description="Proyecto que tuvo como objetivo conectar a las familias vulnerables del Perú con personas que querían ayudarlas durante la pandemia del COVID-19." href="https://www.mapa19.pe/" image={imageMapa19}/>
+          <Card title="Meggamusic " description="Tienda online dedicada a la venta de equipos de cómputo." href="https://www.meggamusicperu.com/" image={imageMegga}/>
+          
+        </div>
+      </div>
+     </Section>
+     <Footer />
+	</main>
+</Layout>
