@@ -10,7 +10,7 @@ const { href, title, description } = Astro.props;
 ---
 
 <a href={href} target="_blank" class="bg-white/30 dark:bg-[#262626]/30 border border-gray-300 dark:border-[#333] rounded-2xl pt-4 pb-5 px-4 group transition-all overflow-hidden">
-  <div class="overflow-hidden rounded-lg h-[250px] sm:h-60 lg:h-40 w-full cursor-pointer border border-gray-200">
+  <div class="overflow-hidden rounded-lg h-[250px] sm:h-60 lg:h-40 w-full cursor-pointer border border-gray-200 dark:border-0">
     <div style={`background-image: url(${Astro.props.image});`} class="w-full h-full bg-cover bg-no-repeat transition-all duration-[6000ms] ease-out group-hover:bg-[0_100%] delay-150">
     </div>
   </div>
