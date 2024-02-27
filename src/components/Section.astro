@@ -1,22 +1,25 @@
 ---
 interface Props {
-  id?: string
+  id?: string;
   title?: string;
   class?: string;
 }
 
-const { id, title} = Astro.props;
+const { id, title } = Astro.props;
 ---
 
-<section id={id} class={`
-  ${Astro.props.class} mt-[62px]`}>
-  <div class="max-w-5xl mx-auto">    
+<section
+  id={id}
+  class={`
+  ${Astro.props.class} mt-[62px]`}
+>
+  <div class="max-w-5xl mx-auto">
     <h2 class="text-[28px] sm:text-3xl font-bold mb-9 flex items-center gap-4">
       <div class="flex-shrink-0">
         <slot name="icon" />
       </div>
       {title}
     </h2>
-    <slot name="content"/>
+    <slot name="content" />
   </div>
 </section>

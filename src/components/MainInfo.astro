@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import myImage from "../../public/david-chugden.webp";
+import SocialLink from "./SocialLink.astro";
+import MailIcon from "./icons/Mail.astro";
+import LinkedinIcon from "./icons/Linkedin.astro";
+import GithubIcon from "./icons/Github.astro";
+---
+
+<div>
+  <Image
+    src={myImage}
+    alt="David Chugdén"
+    class="rounded-full mb-[30px] transition-all ease-in-out duration-300 brightness-[2] dark:brightness-[1.5]"
+    :class="{'w-14 h-14': scrollTop, 'w-16 h-16': !scrollTop}"
+  />
+  <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
+    Desarrollador web, apasionado por la tecnología, autodidacta...
+  </h1>
+  <div class="md:text-lg mb-5 space-y-4 text-[#666666] dark:text-[#888888]">
+    <p>
+      Hola, soy David Chugdén, me especializo en el desarrollo front-end, pero
+      también tengo experiencia en el desarrollo back-end. Me gusta aprender
+      nuevas tecnologías y herramientas que me ayuden a mejorar mis habilidades
+      y a ofrecer un mejor servicio a mis clientes.
+    </p>
+    <p>
+      Si quieres saber más sobre mi trabajo, puedes revisar mis <a
+        href="#proyectos"
+        class="font-semibold dark:text-white/90 text-black !opacity-100 underline decoration-wavy hover:no-underline"
+        >Proyectos</a
+      >.
+    </p>
+    <p>
+      Puedes contactarme mediante los siguientes enlaces. Estaré encantado de
+      colaborar contigo en tu próximo proyecto.
+    </p>
+  </div>
+  <div class="inline-flex gap-3 items-center">
+    <SocialLink href="mailto:hola@davidchugden.com">
+      <MailIcon class="size-6" />
+    </SocialLink>
+    <SocialLink href="https://www.linkedin.com/in/david-chugden-972368190/">
+      <LinkedinIcon class="size-6" />
+    </SocialLink>
+    <SocialLink href="https://github.com/dachugden">
+      <GithubIcon class="size-6" />
+    </SocialLink>
+  </div>
+</div>

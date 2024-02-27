@@ -1,10 +1,47 @@
-<header class="max-w-5xl mx-auto fixed mt-[31px] w-full inset-x-0 flex justify-center z-50 top-0">
-  <nav class="py-3 px-4 md:px-7 bg-white/80 border-gray-200 dark:bg-[rgba(0,0,0,0.8)] border dark:border-[#1f1f1f] rounded-full" :class="{'!dark:bg-black backdrop-blur-sm backdrop-saturate-[180%]': scrollTop}">
-    <ul class="text-black/70 dark:text-white/70 flex items-center gap-5 md:gap-7 text-sm md:*:text-tinny [&>*>a:hover]:text-white *:leading-none [&>*>a]:transition-all [&>*>a]:ease-in-out [&>*>a]:duration-300">
-      <li><a href="#sobreMi">Sobre Mi</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="mailto:hola@davidchugden.com">Contacto</a></li>
+---
+const NAV_LINKS = [
+  {
+    title: "Sobre Mi",
+    label: "sobre-Mi",
+    href: "#sobreMi",
+  },
+  {
+    title: "Experiencia",
+    label: "experiencia",
+    href: "#experiencia",
+  },
+  {
+    title: "Proyectos",
+    label: "proyectos",
+    href: "#proyectos",
+  },
+  {
+    title: "Contacto",
+    label: "contacto",
+    href: "mailto:hola@davidchugden.com",
+  },
+];
+---
+
+<header
+  class="max-w-5xl mx-auto fixed mt-[31px] w-full inset-x-0 flex justify-center z-50 top-0"
+>
+  <nav
+    class="py-3 px-4 md:px-7 bg-white/80 border-gray-200 dark:bg-[rgba(0,0,0,0.8)] border dark:border-[#1f1f1f] rounded-full"
+    :class="{'!dark:bg-black backdrop-blur-sm backdrop-saturate-[180%]': scrollTop}"
+  >
+    <ul
+      class="text-black/70 dark:text-white/70 flex items-center gap-5 md:gap-7 text-sm md:*:text-tinny [&>*>a:hover]:text-white *:leading-none [&>*>a]:transition-all [&>*>a]:ease-in-out [&>*>a]:duration-300"
+    >
+      {
+        NAV_LINKS.map((link) => (
+          <li>
+            <a href={link.href} aria-label={link.label}>
+              {link.title}
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>

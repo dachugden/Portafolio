@@ -1,0 +1,78 @@
+---
+import Badge from "./Badge.astro";
+import Html from "./icons/Html.astro";
+import Css from "./icons/Css.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import JavaScript from "./icons/Javascript.astro";
+import Alpine from "./icons/Alpinejs.astro";
+import Php from "./icons/Php.astro";
+import Laravel from "./icons/Laravel.astro";
+import Livewire from "./icons/Livewire.astro";
+import Mysql from "./icons/Mysql.astro";
+import Git from "./icons/Git.astro";
+import Figma from "./icons/Figma.astro";
+
+const TECHNOLOGIES = [
+  {
+    title: "HTML",
+    icon: Html,
+  },
+  {
+    title: "CSS",
+    icon: Css,
+  },
+  {
+    title: "TailwindCSS",
+    icon: Tailwind,
+  },
+  {
+    title: "Bootstrap",
+    icon: Bootstrap,
+  },
+  {
+    title: "JavaScript",
+    icon: JavaScript,
+  },
+  {
+    title: "Alpine",
+    icon: Alpine,
+  },
+  {
+    title: "PHP",
+    icon: Php,
+  },
+  {
+    title: "Laravel",
+    icon: Laravel,
+  },
+  {
+    title: "Livewire",
+    icon: Livewire,
+  },
+  {
+    title: "MySQL",
+    icon: Mysql,
+  },
+  {
+    title: "Git",
+    icon: Git,
+  },
+  {
+    title: "Figma",
+    icon: Figma,
+  },
+];
+---
+
+<div>
+  <div class="flex flex-wrap gap-3 md:gap-4">
+    {
+      TECHNOLOGIES.map((technology) => (
+        <Badge title={technology.title}>
+          <technology.icon class="size-5" />
+        </Badge>
+      ))
+    }
+  </div>
+</div>

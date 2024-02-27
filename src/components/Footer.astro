@@ -1,7 +1,13 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
 <footer class="pt-28 pb-8 opacity-80 text-sm">
   <div class="max-w-5xl mx-auto">
-    <div class="flex gap-8 flex-col-reverse md:flex-row justify-between items-center">
-      <p>© 2024 David Chugden. Todos los derechos reservados.</p>
+    <div
+      class="flex gap-8 flex-col-reverse md:flex-row justify-between items-center"
+    >
+      <p>© {currentYear} David Chugden. Todos los derechos reservados.</p>
       <ul class="flex items-center gap-7">
         <li><a href="#sobreMi">Sobre Mi</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
@@ -10,4 +16,4 @@
       </ul>
     </div>
   </div>
- </footer>
+</footer>

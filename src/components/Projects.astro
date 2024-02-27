@@ -1,0 +1,147 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+
+import imageDumaco from "../images/dumaco.webp";
+import imageDelValle from "../images/delvallepropiedades.webp";
+import imageClinicaPalomino from "../images/clinica-palomino.webp";
+import imageRch from "../images/rch-peru.webp";
+import imageMancora from "../images/mancora-palm-beach.webp";
+import imageSie from "../images/sie-peru.webp";
+import imagekonnect from "../images/konnecton.webp";
+import imageCpiGas from "../images/cpi-gas.webp";
+import imageAndeanConsultores from "../images/andean-consultores.webp";
+import imageBigBag from "../images/bigbag-peru.webp";
+import imageCarbajal from "../images/carbajal-group.webp";
+import imageMyrProveedores from "../images/myrproveedores.webp";
+import imageHappyToy from "../images/happytoy.webp";
+import imageCorporacionMesta from "../images/corporacion-mesta.webp";
+import imageMapa19 from "../images/mapa19.webp";
+import imageMeggamusic from "../images/meggamusic.webp";
+
+const PROJECTS = [
+  {
+    title: "Dumaco",
+    description:
+      "Empresa que se dedica a brindar soluciones tecnológicas para el desarrollo empresarial.",
+    href: "https://dumaco.net/",
+    image: imageDumaco,
+  },
+  {
+    title: "Del Valle Propiedades",
+    description:
+      "Empresa que se dedica a brindar soluciones inmobiliarias para el desarrollo empresarial.",
+    href: "https://www.delvallepropiedades.com/",
+    image: imageDelValle,
+  },
+  {
+    title: "Clínica Palomino",
+    description:
+      "Empresa que ofrece servicios médicos ocupacionales y asistenciales de calidad.",
+    href: "https://clinicapalomino.com/",
+    image: imageClinicaPalomino,
+  },
+  {
+    title: "RCH Perú",
+    description:
+      "Empresa que provee repuestos para maquinaria pesada de marcas como Komatsu, Caterpillar, Bomag y John Deere.",
+    href: "https://www.rchperu.com/",
+    image: imageRch,
+  },
+  {
+    title: "Máncora Palm Beach",
+    description:
+      "Proyecto de habilitación urbana con un concepto campestre, ubicado en la playa de Máncora, en el norte de Perú.",
+    href: "https://www.mancorapalmbeach.com/",
+    image: imageMancora,
+  },
+  {
+    title: "Sie Perú",
+    description:
+      "Empresa que se dedica a brindar soluciones tecnológicas en el área de electricidad, mecánica y automatización.",
+    href: "https://www.sieperueirl.com/",
+    image: imageSie,
+  },
+  {
+    title: "Konnect On",
+    description:
+      "Herramienta integral, dinámica y flexible que ofrece Dumaco para facilitar el trabajo de los brokers de seguros.",
+    href: "https://dumaco.net/konnecton/",
+    image: imagekonnect,
+  },
+  {
+    title: "CPI Gas Technology",
+    description:
+      "Empresa que ofrece mantenimiento, confiabilidad y gestión de activos para equipos de compresión y descompresión de gas natural.",
+    href: "https://cpigastechnology.com/",
+    image: imageCpiGas,
+  },
+  {
+    title: "Andean Consultores",
+    description:
+      "Empresa que ofrece servicios de contabilidad y asesoría de empresas a nivel nacional.",
+    href: "https://www.andeanconsultores.com/",
+    image: imageAndeanConsultores,
+  },
+  {
+    title: "BigBag Perú",
+    description:
+      "Empresa que fabrica y vende sacos de polipropileno para el transporte y almacenamiento de productos a granel.",
+    href: "https://www.bigbagperu.com/",
+    image: imageBigBag,
+  },
+  {
+    title: "Carbajal Group",
+    description:
+      "Empresa que ofrece soluciones en diferentes áreas, como limpieza, ferretería, eléctrica y protección personal.",
+    href: "https://www.carbajalgroup.org/",
+    image: imageCarbajal,
+  },
+  {
+    title: "MyR Proveedores",
+    description:
+      "Empresa que vende equipos de protección personal (EPP) para diferentes sectores industriales.",
+    href: "https://myrproveedores.com/",
+    image: imageMyrProveedores,
+  },
+  {
+    title: "HappyToy",
+    description:
+      "Empresa que se dedica a la importación y comercialización de juegos, juguetes y artículos de camping infantiles en toda su variedad.",
+    href: "https://happytoy.com.pe/",
+    image: imageHappyToy,
+  },
+  {
+    title: "Corporación Mesta",
+    description:
+      "Empresa que ofrece servicios legales a personas o empresas, mediante un equipo de abogados especializados en diferentes áreas del derecho.",
+    href: "https://corporacionmesta.com/mestaabogados/",
+    image: imageCorporacionMesta,
+  },
+  {
+    title: "Mapa 19",
+    description:
+      "Proyecto que tuvo como objetivo conectar a las familias vulnerables del Perú con personas que querían ayudarlas durante la pandemia del COVID-19.",
+    href: "https://www.mapa19.pe/",
+    image: imageMapa19,
+  },
+  {
+    title: "Meggamusic",
+    description: "Tienda online dedicada a la venta de equipos de cómputo.",
+    href: "https://www.meggamusicperu.com/",
+    image: imageMeggamusic,
+  },
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5">
+  {
+    PROJECTS.map((project) => (
+      <ProjectItem
+        image={project.image.src}
+        title={project.title}
+        description={project.description}
+        href={project.href}
+      />
+    ))
+  }
+</div>

@@ -1,0 +1,40 @@
+---
+import ExperiencieItem from "./ExperiencieItem.astro";
+import DownloadCv from "./Button.astro";
+import RowDownIcon from "./icons/RowDownload.astro";
+
+const EXPERIENCIES = [
+  {
+    title: "Desarrollador Web Front-End",
+    company: "Dumaco SAC",
+    mode: "Freelance",
+    city: "Lima, Perú",
+    date: "Febrero 2022 - Actualidad",
+    description:
+      "Encargado en el diseño y desarrollo de interfaces de usuario interactivas y dinámicas, siguiendo los principios de usabilidad, accesibilidad y responsividad. Diseñé y desarrollé las diferentes dashboards y páginas web.",
+  },
+  {
+    title: "Desarrollador Web Full Stack",
+    company: "Terratech",
+    mode: "Hibrido",
+    city: "Chiclayo, Perú",
+    date: "Agosto 2018 - Febrero 2022",
+    description:
+      "Durante este año, me dedique al desarrollo de sitios web estáticos, dinámicos administrables, y sistemas web. Implementé módulos de diferentes tipos a distintos sitios web.",
+  },
+];
+---
+
+<ol class="mt-16">
+  <li>
+    {EXPERIENCIES.map((experience) => <ExperiencieItem {...experience} />)}
+  </li>
+</ol>
+<DownloadCv
+  title="Descargar curriculum"
+  href="./desarrollador_web_david_chugden.pdf"
+>
+  <div slot="icon">
+    <RowDownIcon class="size-6" />
+  </div>
+</DownloadCv>
