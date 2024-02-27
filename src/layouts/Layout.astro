@@ -22,6 +22,24 @@ const { title, description } = Astro.props;
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+    </script>
+    <script is:inline>
+      document.addEventListener(
+        "astro:page-load",
+        () => {
+          gtag("js", new Date());
+          gtag("config", "G-TJ6NEBLRNV");
+        },
+        { once: false }
+      );
+    </script>
   </head>
   <body
     class="h-screen dark:bg-black text-black dark:text-white font-onest text-base antialiased"
