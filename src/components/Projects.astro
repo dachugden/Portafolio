@@ -25,6 +25,24 @@ import imageAndesti from "../images/andesti.webp";
 import imageSumaq from "../images/sumaq.webp";
 import imageDumacoInsurtech from "../images/dumaco-insurtech.webp";
 
+import Html from "./icons/Html.astro";
+import Css from "./icons/Css.astro";
+import Astros from "./icons/Astros.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Bulma from "./icons/Bulma.astro";
+import ThreeJS from "./icons/ThreeJS.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import JavaScript from "./icons/Javascript.astro";
+import Alpine from "./icons/Alpinejs.astro";
+import Php from "./icons/Php.astro";
+import Laravel from "./icons/Laravel.astro";
+import Livewire from "./icons/Livewire.astro";
+import Mysql from "./icons/Mysql.astro";
+import Git from "./icons/Git.astro";
+import Figma from "./icons/Figma.astro";
+import JQuery from "./icons/Jquery.astro";
+import Foundation from "./icons/Foundation.astro";
+
 const PROJECTS = [
   {
     title: "Volt",
@@ -32,6 +50,24 @@ const PROJECTS = [
       "VOLT es la marca de energizantes que te ayuda a desafiar el día a día, incrementando tu rendimiento. Activa todo el potencial para sacar lo mejor de ti.",
     href: "https://volt-oficial.com/",
     image: imageVolt,
+    technologies: [
+      {
+        name: "Astro",
+        icon: Astros,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "ThreeJS",
+        icon: ThreeJS,
+      },
+    ],
   },
   {
     title: "OHM Ingenieros",
@@ -39,13 +75,45 @@ const PROJECTS = [
       "Empresa cajamarquina con más de 7 años de experiencia en sistemas tecnológicos (Seguridad Electrónica, TICS, Sistemas Eléctricos y otros).",
     href: "https://ohmingenieros.com/",
     image: imageOHM,
+    technologies: [
+      {
+        name: "Laravel",
+        icon: Laravel,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "Livewire",
+        icon: Livewire,
+      },
+    ],
   },
   {
-    title: "Sumaq - Hotel Restaurante",
+    title: "Sumaq Hotel",
     description:
       "Sumaq Cusco Hotel es un alojamiento de 3 estrellas situado en Cuzco..",
     href: "https://sumaq.com.pe/",
     image: imageSumaq,
+    technologies: [
+      {
+        name: "Astro",
+        icon: Astros,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+    ],
   },
   {
     title: "Howo",
@@ -53,6 +121,24 @@ const PROJECTS = [
       "Empresa 100% peruana en el sector transporte, como importadores y comercializadores de camiones pesados y livianos.",
     href: "https://howo.pe/",
     image: imageHowo,
+    technologies: [
+      {
+        name: "Laravel",
+        icon: Laravel,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "Livewire",
+        icon: Livewire,
+      },
+    ],
   },
   {
     title: "Aladi proyectos integrales",
@@ -60,6 +146,24 @@ const PROJECTS = [
       "Empresa dedicada a todo tipo de reformas para tu hogar y comunidad.",
     href: "https://aladiproyectosintegrales.com/",
     image: imageAladi,
+    technologies: [
+      {
+        name: "Laravel",
+        icon: Laravel,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "Livewire",
+        icon: Livewire,
+      },
+    ],
   },
   {
     title: "Dumaco Insurtech",
@@ -67,6 +171,20 @@ const PROJECTS = [
       "Empresa encargada al Desarrollo de software personalizado de sistemas de TI",
     href: "https://dumacoinsurtech.com/",
     image: imageDumacoInsurtech,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+    ],
   },
   {
     title: "Dumaco",
@@ -74,6 +192,24 @@ const PROJECTS = [
       "Empresa que se dedica a brindar soluciones tecnológicas para el desarrollo empresarial.",
     href: "https://dumaco.net/",
     image: imageDumaco,
+    technologies: [
+      {
+        name: "Laravel",
+        icon: Laravel,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "Livewire",
+        icon: Livewire,
+      },
+    ],
   },
   {
     title: "Del Valle Propiedades",
@@ -81,6 +217,20 @@ const PROJECTS = [
       "Empresa que se dedica a brindar soluciones inmobiliarias para el desarrollo empresarial.",
     href: "https://www.delvallepropiedades.com/",
     image: imageDelValle,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "Bootstrap",
+        icon: Bootstrap,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Clínica Palomino",
@@ -88,6 +238,24 @@ const PROJECTS = [
       "Empresa que ofrece servicios médicos ocupacionales y asistenciales de calidad.",
     href: "https://clinicapalomino.com/",
     image: imageClinicaPalomino,
+    technologies: [
+      {
+        name: "Laravel",
+        icon: Laravel,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "Livewire",
+        icon: Livewire,
+      },
+    ],
   },
   {
     title: "RCH Perú",
@@ -95,6 +263,24 @@ const PROJECTS = [
       "Empresa que provee repuestos para maquinaria pesada de marcas como Komatsu, Caterpillar, Bomag y John Deere.",
     href: "https://www.rchperu.com/",
     image: imageRch,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Máncora Palm Beach",
@@ -102,6 +288,20 @@ const PROJECTS = [
       "Proyecto de habilitación urbana con un concepto campestre, ubicado en la playa de Máncora, en el norte de Perú.",
     href: "https://www.mancorapalmbeach.com/",
     image: imageMancora,
+    technologies: [
+      {
+        name: "Astro",
+        icon: Astros,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+    ],
   },
   {
     title: "Sie Perú",
@@ -109,6 +309,24 @@ const PROJECTS = [
       "Empresa que se dedica a brindar soluciones tecnológicas en el área de electricidad, mecánica y automatización.",
     href: "https://www.sieperueirl.com/",
     image: imageSie,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Konnect On",
@@ -116,6 +334,20 @@ const PROJECTS = [
       "Herramienta integral, dinámica y flexible que ofrece Dumaco para facilitar el trabajo de los brokers de seguros.",
     href: "https://dumaco.net/konnecton/",
     image: imagekonnect,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+    ],
   },
   {
     title: "CPI Gas Technology",
@@ -123,6 +355,24 @@ const PROJECTS = [
       "Empresa que ofrece mantenimiento, confiabilidad y gestión de activos para equipos de compresión y descompresión de gas natural.",
     href: "https://cpigastechnology.com/",
     image: imageCpiGas,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Andean Consultores",
@@ -130,6 +380,24 @@ const PROJECTS = [
       "Empresa que ofrece servicios de contabilidad y asesoría de empresas a nivel nacional.",
     href: "https://www.andeanconsultores.com/",
     image: imageAndeanConsultores,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "BigBag Perú",
@@ -137,6 +405,20 @@ const PROJECTS = [
       "Empresa que fabrica y vende sacos de polipropileno para el transporte y almacenamiento de productos a granel.",
     href: "https://www.bigbagperu.com/",
     image: imageBigBag,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "BulmaCSS",
+        icon: Bulma,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Carbajal Group",
@@ -144,6 +426,20 @@ const PROJECTS = [
       "Empresa que ofrece soluciones en diferentes áreas, como limpieza, ferretería, eléctrica y protección personal.",
     href: "https://www.carbajalgroup.org/",
     image: imageCarbajal,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+    ],
   },
   {
     title: "MyR Proveedores",
@@ -151,6 +447,20 @@ const PROJECTS = [
       "Empresa que vende equipos de protección personal (EPP) para diferentes sectores industriales.",
     href: "https://myrproveedores.com/",
     image: imageMyrProveedores,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "HappyToy",
@@ -158,6 +468,24 @@ const PROJECTS = [
       "Empresa que se dedica a la importación y comercialización de juegos, juguetes y artículos de camping infantiles en toda su variedad.",
     href: "https://happytoy.com.pe/",
     image: imageHappyToy,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tailwind,
+      },
+      {
+        name: "AlpineJS",
+        icon: Alpine,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Corporación Mesta",
@@ -165,6 +493,20 @@ const PROJECTS = [
       "Empresa que ofrece servicios legales a personas o empresas, mediante un equipo de abogados especializados en diferentes áreas del derecho.",
     href: "https://corporacionmesta.com/mestaabogados/",
     image: imageCorporacionMesta,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "Bootstrap",
+        icon: Bootstrap,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Andesti",
@@ -172,6 +514,20 @@ const PROJECTS = [
       "Empresa importadora y distribuidora de productos tecnológicos",
     href: "https://andesti.com/",
     image: imageAndesti,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "Bootstrap",
+        icon: Bootstrap,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Mapa 19",
@@ -179,25 +535,44 @@ const PROJECTS = [
       "Proyecto que tuvo como objetivo conectar a las familias vulnerables del Perú con personas que querían ayudarlas durante la pandemia del COVID-19.",
     href: "https://www.mapa19.pe/",
     image: imageMapa19,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "FoundationCSS",
+        icon: Foundation,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
   {
     title: "Meggamusic",
     description: "Tienda online dedicada a la venta de equipos de cómputo.",
     href: "https://www.meggamusicperu.com/",
     image: imageMeggamusic,
+    technologies: [
+      {
+        name: "PHP",
+        icon: Php,
+      },
+      {
+        name: "FoundationCSS",
+        icon: Foundation,
+      },
+      {
+        name: "JQuery",
+        icon: JQuery,
+      },
+    ],
   },
 ];
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5">
-  {
-    PROJECTS.map((project) => (
-      <ProjectItem
-        image={project.image.src}
-        title={project.title}
-        description={project.description}
-        href={project.href}
-      />
-    ))
-  }
+  <ProjectItem data={PROJECTS} />
 </div>
